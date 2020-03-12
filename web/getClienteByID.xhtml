@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>.: Consulta de Clientes :.</title>
+    </h:head>
+    <h:body>
+        Consulta de Clientes por ID <br/>
+        
+        <h:form>
+            ID: <h:inputText value="#{clienteBean.idCliente}" /><br/>
+            Razón social: <h:inputText value="#{clienteBean.razonSocial}" /><br/>
+            RFC: <h:inputText value="#{clienteBean.rfc}" /><br/>
+            Dirección: <h:inputText value="#{clienteBean.direccion}" /><br/>
+            Email: <h:inputText value="#{clienteBean.email}" /><br/>
+            <h:commandButton value="Consultar" action="#{clienteBean.returnClienteById}"></h:commandButton>
+            <h:messages infoStyle="color: blue" globalOnly="true" />
+        </h:form>
+    </h:body>
+</html>
+
